@@ -42,7 +42,7 @@ int main() {
 
     // 2. Extract and decode the roots
     std::vector<Point> points;  // To store the decoded points (x, y)
-
+int a=5;
     for (auto& element : data.items()) {
         if (element.key() != "keys") {  // Skip "keys"
             int base = std::stoi(element.value()["base"].get<std::string>());   // Base of the value
